@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Guia de Sustentabilidade Energética</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Item Início com Submenu -->
+                <li class="dropdown">
+                    <a href="index.html">Início</a>
+                    <ul class="submenu">
+                        <li><a href="#sustentabilidade">O que é Sustentabilidade?</a></li>
+                        <li><a href="#Importancia">Importância da Sustentabilidade</a></li>
+                        <li><a href="#dicas">Dicas Práticas</a></li>
+                        <li><a href="#recursos">Recursos Naturais e a Crise Energética</a></li>
+                        <li><a href="#educacao">Educação</a></li>
+                        <li><a href="#tecnologias"> Inovações e Tecnologias Sustentáveis</a></li>
+                        <li><a href="#desafios">Desafios Globais e Locais</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="feedback">
+        <h2>Deixe seu feedback!</h2>
+        <p><strong>Sua opinião é muito importante para nós!</strong> 💚  
+         Queremos saber o que você achou do nosso site e como ele ajudou você a entender mais sobre sustentabilidade e consumo consciente.</p>
+        <p>👉 Você pode deixar sua opinião de duas formas:</p>
+          <ul>
+             <li><strong>Mensagem livre aqui no site</strong> 📝<br>
+             Escreva sugestões, melhorias ou pontos que você gostou.</li>
+
+             <li><strong>Pesquisa rápida no Google Forms</strong> ⭐<br>
+             Avalie de <strong>1 a 5 estrelas</strong> e diga se recomendaria nosso guia para familiares e amigos.</li>
+          </ul>
+        <p>Estamos ansiosos para ouvir você. Obrigado por fazer parte dessa jornada por um futuro mais sustentável! 🌱✨</p>
+
+    <div class="form">
+            <strong><p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf3IGCktvvh_t9mdBycLPBVZWv4mdMxotEPZ0Wb2-fSkhUScQ/viewform?usp=header" target="_blank">Responder pesquisa rápida ⭐</a></p></strong>
+    </div>
+    <br>
+    <form action="process_feedback.php" method="POST">
+        <div>
+            <strong><p>Escrever mensagem livre:</p></strong>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+        </div>
+        <button type="submit">Enviar Feedback</button>
+    </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Guia de Sustentabilidade Energética. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

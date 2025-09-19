@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Guia de Sustentabilidade Energética</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html">Início</a>
+                    <ul class="submenu">
+                        <li><a href="#sustentabilidade">O que é Sustentabilidade?</a></li>
+                        <li><a href="#Importancia">Importância da Sustentabilidade</a></li>
+                        <li><a href="#dicas">Dicas Práticas</a></li>
+                        <li><a href="#recursos">Recursos Naturais e a Crise Energética</a></li>
+                        <li><a href="#educacao">Educação</a></li>
+                        <li><a href="#tecnologias"> Inovações e Tecnologias Sustentáveis</a></li>
+                        <li><a href="#desafios">Desafios Globais e Locais</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="texto-calcu">
+           <h2>Calculadora de consumo de energia</h2>
+           <h3>Como funciona a calculadora de consumo de energia?</h3>
+           <p>Essa calculadora foi desenvolvida para ajudar você a estimar o custo de energia elétrica de aparelhos da sua casa. Com ela, você pode entender melhor como o uso diário de determinados equipamentos impacta sua conta de luz. Para utilizá-la, siga os passos abaixo:</p>
+           <p><strong>1. Informe o nome do aparelho:</strong> Digite o nome ou tipo do aparelho que deseja calcular, como “Televisão”, “Geladeira” ou outro equipamento.</p>
+           <p><strong>2. Preencha a potência do aparelho (Watts):</strong> Esse valor pode ser encontrado na etiqueta de identificação do aparelho ou no manual do fabricante. A potência é a quantidade de energia que o aparelho consome enquanto está em uso.</p>
+           <p><strong>3. Insira as horas de uso por dia:</strong> Informe o tempo médio, em horas, que o aparelho é utilizado diariamente.</p>
+           <p><strong>4. Informe o custo por kWh (R$):</strong> Esse dado pode ser encontrado na sua conta de luz. Ele representa o valor que você paga por cada kilowatt-hora consumido.</p>
+           <p><strong>5. Clique em "Calcular Consumo":</strong> Após preencher os campos, clique no botão para que a calculadora estime o custo diário de uso do aparelho.</p>
+           <p>O cálculo considera o consumo de energia do aparelho em kilowatts-hora (kWh) e o custo informado, apresentando o valor estimado em reais (R$).</p>
+           <p>Essa ferramenta é útil para identificar quais aparelhos têm maior impacto na sua conta de energia e como você pode economizar no seu dia a dia!</p> 
+           <br>
+           <br>
+           <h2>Simule o consumo de energia da sua casa e descubra o quanto pode economizar em R$:</h2> 
+           <br>
+           <h3>Preencha os campos abaixo para calcular o consumo de energia.</h3>
+            
+    </div>
+
+    <section id="ferramentas">
+        <div class="calculadora">
+            <form id="calc-form">
+                <div>
+                    <label for="aparelho">Aparelho (ex.: TV, Geladeira):</label>
+                    <input type="text" id="aparelho" placeholder="Ex: Televisão" required>
+                </div>
+                <div>
+                    <label for="potencia">Potência do Aparelho (Watts):</label>
+                    <input type="number" id="potencia" placeholder="Ex: 100" required>
+                </div>
+                <div>
+                    <label for="horas">Horas de uso por dia:</label>
+                    <input type="number" id="horas" placeholder="Ex: 4" required>
+                </div>
+                <div>
+                    <label for="custo">Custo por kWh (R$):</label>
+                    <input type="number" id="custo" placeholder="Ex: 0.90" required>
+                </div>
+                <button type="button" onclick="calcularConsumo()">Calcular Consumo</button>
+            </form>
+    
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Guia de Sustentabilidade Energética. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
